@@ -236,4 +236,4 @@ where department_head = 'Sarah Thompson' and salary_amount > 60000;
 ```
 ![](SpecificSalary2.png)
 ## Conclusion 😄
-I also progressively demonstrated SQL proficiency, starting from basic queries and gradually advancing to more complex and comprehensive analysis. This allowed me to showcase the versatility and power of SQL as a tool for data manipulation and analysis.
+I progressively demonstrated SQL proficiency, starting from basic queries and gradually advancing to more complex and comprehensive analysis. This allowed me to showcase the versatility and power of SQL as a tool for data manipulation and analysis.
