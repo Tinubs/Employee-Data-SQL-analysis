@@ -30,13 +30,11 @@ In this project, I will start from the creation of the database itself, and prog
 
 ## Skills/concepts demonstrated:
 The following SQL knowledge were demonstrated:
-- Database creation, 
-- Data Import, 
-- Data Retrieval, 
-- Data Filtering, 
-- Data Aggregation, 
+- Database creation,  
 - Data Modification, 
-- Data Joins
+- Data Joins, 
+- Data Aggregation, 
+- Data Filtering
 
 ## The goals of this project were
 
@@ -83,7 +81,7 @@ drop column end_date;
 
 - Where the employee_id is 9, 10 and 11, update the department_id to ‘4’
 ```ruby
-Alter Table salariesupdate employees
+update employees
 set department_id =4
 where employee_id between 9 and 11;
 ```
@@ -138,7 +136,7 @@ order by employee_id asc;
 ```
 ![](Tempoary_Table.png)
 
-_Secondly, I used the new table name Employee data to extract the information_
+_Secondly, I used the new table name **EmployeeData** to extract the information_
 ```ruby
 select avg(salary_amount) as AverageSalary, department_name
 from EmployeeData
@@ -158,7 +156,7 @@ group by department_name;
 - What is the highest salary earned by an employee?
 ```ruby
 select max(salary_amount)
-from Employeedata;
+from EmployeeData;
 ```
 ![](HighestSalary.png)
 
@@ -205,7 +203,7 @@ group by department_name, department_head;
 - Retrieve the names of all employees in the Sales department.
 ```ruby
 select name, department_name
-from employeedata
+from employeeData
 where department_name = 'Sales'
 order by name;
 ```
